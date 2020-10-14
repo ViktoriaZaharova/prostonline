@@ -1,0 +1,452 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  color: $color
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+.container
+  max-width: 1280px
+  padding: 0 20px
+  width: 100%
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+.logo
+  max-width: 238px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.icon-svg
+  width: 100%
+  height: 100%
+
+.button-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .btn
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: 500
+  cursor: pointer
+  transition: .3s ease
+  height: 40px
+
+
+.btn-border
+  border: 1px solid #41B64B
+    radius: 60px
+  padding: 5px 20px
+  color: $color
+  &:hover
+    color: #fff
+    background: $accent
+
+.links-border
+  font-weight: 500
+  color: $color
+  padding: 0 0 2px
+  border-bottom: 1px dashed $accent
+  &:hover
+    color: $accent
+
+.links-border-line
+  font-weight: 500
+  color: $color
+  padding: 0 0 2px
+  border-bottom: 1px solid $accent
+  &:hover
+    color: $accent
+
+h2
+  text-align: center
+  width: 100%
+  font-size: 40px
+  font-weight: 500
+  margin: 0 auto 30px
+
+.w-100
+  width: 100%
+
+.mb-80
+  margin-bottom: 80px
+
+.links-cabinet
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-weight: 500
+  color: $color
+  &:hover
+    color: $accent
+
+.links-cabinet__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  min-width: 30px
+  border: 1px solid #41B64B
+    radius: 50px
+  padding: 5px
+  margin: 0 0 0 12px
+  .icon-svg
+    fill: $color
+
+.phone
+  display: flex
+  align-items: center
+  border: 1px solid #41B64B
+    radius: 60px
+  color: $color
+  font-weight: 500
+  font-size: 16px
+  padding: 5px 5px 5px 20px
+  &:hover
+    color: $accent
+
+.phone-icon
+  width: 30px
+  height: 30px
+  min-width: 30px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $accent
+  padding: 6px 9px
+  margin: 0 0 0 10px
+  .icon-svg
+    fill: #fff
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 40px 0 0
+    &:last-child
+      margin: 0
+    a
+      font-size: 14px
+      font-weight: 500
+      color: $color
+      &:hover
+        color: $accent
+
+
+
+//header
+header
+  margin: 0 0 10px
+  background: #fff
+  padding: 14px 0 16px
+  .container
+    align-items: center
+    justify-content: space-between
+
+.slick-slide
+  outline: none
+
+//main
+.main-slider
+  width: 100%
+
+  background: #FFFFFF
+
+.main-slider__box
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  border: 20px solid #F3F3F3
+    radius: 400px
+  margin: 26px 0 0
+
+.main-slider__img
+  max-width: 610px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: -50px 0 -15px -20px
+
+.main-slider__content
+  width: calc(100% - 610px)
+  padding: 14px 0 0 30px
+  .text
+    line-height: 30px
+    margin: 0 0 20px
+    max-width: 550px
+    width: 100%
+
+.main-slider__title
+  color: $accent
+  font-size: 60px
+  font-weight: 500
+  line-height: 70px
+  margin: 0 0 20px
+
+
+
+.main-slider__nav
+  margin: -70px auto 0
+
+.slider-nav
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.counter-slide
+  display: flex
+  align-items: center
+  font-size: 20px
+  font-weight: 500
+  color: $color
+  margin: 0 10px
+  .cp
+    color: $accent
+    margin: 0 3px 0 0
+
+.slick-arrow
+  width: 5px
+  height: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1
+  opacity: 1
+  position: relative
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  transform: none
+  background: transparent
+  &:before
+    display: none
+
+.slick-disabled
+  opacity: 0.3
+
+//.stages
+.stages-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.stages-box
+  position: relative
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  font-size: 20px
+  font-weight: 500
+  width: 24%
+  a
+    display: inline
+
+
+.stages-box__icon
+  width: 200px
+  height: 200px
+  border: 10px solid #F3F3F3
+    radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 55px 36px
+  .icon-svg
+    fill: none
+
+.stages-box__text
+  max-width: 255px
+  width: 100%
+  margin: -30px auto 0
+  line-height: 30px
+
+//.tabs
+.tabs__caption
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 22px
+  font-size: 14px
+  font-weight: 500
+  li
+    margin: 0 10px 0 0
+    padding: 14px 10px
+    border-bottom: 2px solid transparent
+    cursor: pointer
+    transition: .3s ease
+    &:last-child
+      margin: 0
+  .active
+    border-bottom-color: $accent
+
+.tabs__content
+  display: none
+
+.tabs__content.active
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+
+
+//footer
+footer
+  background: #F3F3F3
+  padding: 40px 0 65px
+  margin: 80px 0 0
+  .container
+    justify-content: space-between
+    align-items: flex-start
+  h3
+    color: #838383
+    font-weight: 500
+    margin: 0 0 10px
+  .phone
+    margin: 20px 0 0
+  p
+    color: #838383
+    font-weight: 500
+
+.logo-footer
+  max-width: 210px
+  width: 100%
+  display: flex
+  align-items: center
+
+.copyright
+  margin: 15px 0 0
+  font-size: 14px
+  color: #838383
+  max-width: 230px
+  width: 100%
+
+.footer-menu
+  li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    a
+      font-size: 14px
+      font-weight: 500
+      color: $color
+      line-height: 30px
+      &:hover
+        color: $accent
+
+.logo-developer
+  margin: 10px 0 0
+  max-width: 130px
+  width: 100%
+
+@import "media"
+// Всегда в конце
