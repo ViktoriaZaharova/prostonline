@@ -228,6 +228,11 @@ h2
       background: #fff
       .icon-svg
         fill: $accent
+    .phone-text
+      color: #fff
+
+.phone-text
+  color: $color
 
 .phone-icon
   width: 30px
@@ -304,11 +309,11 @@ header
   display: flex
   align-items: center
   justify-content: center
-  margin: -50px 0 -15px -20px
+  margin: -20px 0 -20px -25px
 
 .main-slider__content
   width: calc(100% - 610px)
-  padding: 14px 0 0 30px
+  padding: 14px 0 0 0
   .text
     line-height: 30px
     margin: 0 0 20px
@@ -490,6 +495,7 @@ header
     width: 13px
     height: 9px
     fill: none
+    stroke: $accent
 
 .icon-infinity
   width: 16px
@@ -725,7 +731,7 @@ footer
   h2
     margin: 0 auto 20px
   .publications-box
-    max-width: 440px
+    max-width: 400px
 
 
 .publications-box
@@ -816,7 +822,7 @@ footer
   position: absolute
   left: 0
   top: 0
-  background: $accent
+  background: #fff
   opacity: .7
 
 .mobile-menu
@@ -1091,6 +1097,275 @@ h4
       right: auto
       left: 0
 
+//service jur
+.theme-blue
+  .btn-burger
+    span
+      background: $accent2
+  .menu
+    li
+      a
+        &:hover
+          color: $accent2
+      .active
+        color: $accent2
+        &:before
+          background: $accent2
+  .phone, .btn-border, .about-company__img
+    border-color: $accent2
+    &:hover
+      background: $accent2
+  .phone-icon
+    background: $accent2
+  .links-cabinet__icon
+    border-color: $accent2
+  .links-cabinet, .links-edit
+    &:hover
+      color: $accent2
+  .main-slider__title, .color-accent
+    color: $accent2
+  .list-check
+    li
+      &:before
+        background: url("../img/check-blue.svg") no-repeat center
+          size: contain
+  .btn-accent
+    background: $accent2
+    &:hover
+      box-shadow: 0 0 20px rgba($accent2, 0.2)
+  .list-dots
+    li
+      &:before
+        background: $accent2
+  .tariffs-box
+    &:hover
+      box-shadow: 0px 0px 10px rgba(86, 214, 255, 0.1), 0px 0px 40px rgba(67, 170, 227, 0.2)
+  .bg-accent
+    background: $accent2
+
+  .link
+    .link-text
+      border-bottom-color: $accent2
+  .footer-menu
+    li
+      a
+        &:hover
+          color: $accent2
+  .icon-check
+    stroke: $accent2
+  .btn-close
+    .icon-svg
+      fill: $accent2
+
+
+//the-trust
+.the-trust
+  .stages-wrapper
+    justify-content: center
+  .stages-box
+    width: 295px
+    &:after
+      display: none
+
+.col-4
+  width: 25%
+  padding: 0 10px
+
+.business-areas__box
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  padding: 20px 20px 40px
+  font-size: 14px
+  line-height: 30px
+  border: 1px solid #E5E5E5
+    radius: 10px
+  background: #fff
+  h4
+    text-align: center
+    line-height: 30px
+    margin: 0 auto 10px
+
+.business-areas__icon
+  width: 100px
+  height: 100px
+  margin: 0 auto 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #F3F3F3
+  padding: 30px
+  border-radius: 50%
+
+//modal
+.modal__div
+  position: fixed
+  max-width: 630px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+  h2
+    margin: 0 auto 20px
+
+.modal__wrapper
+  width: 100%
+  height: auto
+  position: relative
+  margin: 30px auto
+  overflow: auto
+
+
+.modal__content
+  background: #fff
+  width: calc(100% - 30px)
+  height: auto
+  //overflow: auto
+  padding: 30px 40px 50px
+  box-sizing: border-box
+  position: relative
+  .box-text
+    margin: 0 0 30px
+    line-height: 30px
+  .btn
+    width: 100%
+    font-size: 16px
+    font-weight: 500
+
+
+.modal__close
+  width: 20px
+  height: 20px
+  padding: 3px
+  position: absolute
+  right: 0
+  top: 0
+  cursor: pointer
+  .icon-svg
+    fill: $color
+
+button
+  border: none
+  outline: none
+  font-family: $default-font
+
+form
+  width: 100%
+  button
+    max-width: none
+    width: 100%
+    font-size: 16px
+    font-weight: 500
+    margin: 30px auto 0
+
+label
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  margin: 0 0 20px
+  position: relative
+  &:last-child
+    margin: 0
+
+.input-title
+  width: 100%
+  padding: 0 20px 10px
+  color: #838383
+  font-weight: 500
+  font-size: 14px
+
+input
+  width: 100%
+  font-family: $default-font
+  box-sizing: border-box
+  outline: none
+  height: 40px
+  border: 1px solid #41B64B
+    radius: 60px
+  padding: 0 20px
+  color: #464646
+  font-size: 16px
+  font-weight: 500
+  &::placeholder
+    color: #464646
+
+.input-group
+  width: 100%
+  position: relative
+
+.password-control
+  position: absolute
+  right: 22px
+  top: 50%
+  transform: translate(0,-50%)
+  width: 16px
+  height: 12px
+  background: url("../img/noview.svg") no-repeat center
+    size: contain
+  cursor: pointer
+
+.password-control.view
+  background: url("../img/view.svg") no-repeat center
+    size: contain
+
+select
+  height: 40px
+  width: 100%
+  border: 1px solid #41B64B
+    radius: 60px
+  padding: 0 30px 0 20px
+  font-family: $default-font
+  color: $color
+  font-size: 16px
+  font-weight: 500
+  outline: none
+  background: url("../img/arrow-select.svg") #fff no-repeat 96% center
+    size: 10px
+  -webkit-appearance: none
+  appearance: none
+  -moz-appearance: none
+  box-sizing: border-box
+  &::placeholder
+    color: $color
+
+textarea
+  width: 100%
+  height: 80px
+  border: 1px solid #41B64B
+    radius: 20px
+  padding: 10px 20px
+  font-family: $default-font
+  color: #838383
+  font-size: 16px
+  font-weight: 500
+  outline: none
+  box-sizing: border-box
+  &::placeholder
+    color: #838383
+
+.input-date-icon
+  right: 22px
+  top: 50%
+  transform: translate(0,-50%)
+  position: absolute
+  width: 16px
+  height: 15px
+  display: flex
+  align-items: center
+  justify-content: center
+  .icon-svg
+    fill: $accent
 
 
 @import "media"

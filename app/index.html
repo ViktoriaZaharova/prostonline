@@ -27,7 +27,11 @@
 <body>
 
 <div class="mobile-menu">
-    <div class="btn-close"><svg class="icon-svg"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+    <div class="btn-close">
+        <svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+    </div>
     <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
     <ul class="menu">
@@ -55,11 +59,13 @@
             <li><a href="#">Публикации</a></li>
         </ul>
 
-        <a href="tel:8 495 481 01-28" class="phone">
-            <span class="phone-text">8 495 481 01-28</span>
-            <span class="phone-icon"><svg class="icon-svg"><use
-                    xlink:href="img/sprite.svg#phone-icon"></use></svg></span>
-        </a>
+        <div class="phone">
+            <a href="tel:8 495 481 01-28" class="phone-text">8 495 481 01-28</a>
+            <a href="#modal__call" class="phone-call open_modal">
+                <span class="phone-icon"><svg class="icon-svg"><use
+                        xlink:href="img/sprite.svg#phone-icon"></use></svg></span>
+            </a>
+        </div>
 
         <a href="#modal__cabinet" class="links-cabinet open_modal">
             <span class="links-cabinet__text">Личный кабинет</span>
@@ -270,7 +276,8 @@
                         <ul class="list-parameters">
                             <li>
                                 <p>Личный кабинет</p>
-                                <span><svg class="icon-svg icon-check"><use xlink:href="img/sprite.svg#check"></use></svg></span>
+                                <span><svg class="icon-svg icon-check"><use
+                                        xlink:href="img/sprite.svg#check"></use></svg></span>
                             </li>
                             <li>
                                 <p>Экстренная юридическая консультация по
@@ -296,23 +303,27 @@
                                     различных областях — техника, автомобили и
                                     т.д.
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Проверка наличия задолженностей по долгам/
                                     штрафам, которые могут не позволить
                                     клиенту выехать заграницу</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Бесплатные звонки 8-800, скайп, ЛК</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Предоставление аудиозаписи разговора с
                                     юристом
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Помощь и сопровождение
@@ -327,7 +338,8 @@
                             <li>
                                 <p>Предоставление типовых договоров и
                                     инструкций по их составлению</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Письменная консультация</p>
@@ -346,7 +358,7 @@
 
                         <div class="tariffs-box__price">1 000 ₽</div>
 
-                        <a href="#" class="btn btn-border open_modal">Выбрать тариф</a>
+                        <a href="#modal__order" class="btn btn-border open_modal">Выбрать тариф</a>
                     </div>
                     <div class="tariffs-box">
                         <div class="tariffs-box__icon bg-accent">
@@ -360,7 +372,8 @@
                         <ul class="list-parameters">
                             <li>
                                 <p>Личный кабинет</p>
-                                <span><svg class="icon-svg icon-check"><use xlink:href="img/sprite.svg#check"></use></svg></span>
+                                <span><svg class="icon-svg icon-check"><use
+                                        xlink:href="img/sprite.svg#check"></use></svg></span>
                             </li>
                             <li>
                                 <p>Экстренная юридическая консультация по
@@ -386,23 +399,27 @@
                                     различных областях — техника, автомобили и
                                     т.д.
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Проверка наличия задолженностей по долгам/
                                     штрафам, которые могут не позволить
                                     клиенту выехать заграницу</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Бесплатные звонки 8-800, скайп, ЛК</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Предоставление аудиозаписи разговора с
                                     юристом
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Помощь и сопровождение
@@ -417,7 +434,8 @@
                             <li>
                                 <p>Предоставление типовых договоров и
                                     инструкций по их составлению</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Письменная консультация</p>
@@ -435,7 +453,7 @@
 
                         <div class="tariffs-box__price">2 000 ₽</div>
 
-                        <a href="#" class="btn btn-border open_modal">Выбрать тариф</a>
+                        <a href="#modal__order" class="btn btn-border open_modal">Выбрать тариф</a>
                     </div>
                     <div class="tariffs-box">
                         <div class="tariffs-box__icon bg-yellow">
@@ -449,7 +467,8 @@
                         <ul class="list-parameters">
                             <li>
                                 <p>Личный кабинет</p>
-                                <span><svg class="icon-svg icon-check"><use xlink:href="img/sprite.svg#check"></use></svg></span>
+                                <span><svg class="icon-svg icon-check"><use
+                                        xlink:href="img/sprite.svg#check"></use></svg></span>
                             </li>
                             <li>
                                 <p>Экстренная юридическая консультация по
@@ -475,23 +494,27 @@
                                     различных областях — техника, автомобили и
                                     т.д.
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Проверка наличия задолженностей по долгам/
                                     штрафам, которые могут не позволить
                                     клиенту выехать заграницу</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Бесплатные звонки 8-800, скайп, ЛК</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Предоставление аудиозаписи разговора с
                                     юристом
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Помощь и сопровождение
@@ -506,7 +529,8 @@
                             <li>
                                 <p>Предоставление типовых договоров и
                                     инструкций по их составлению</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Письменная консультация</p>
@@ -525,7 +549,7 @@
 
                         <div class="tariffs-box__price">3 000 ₽</div>
 
-                        <a href="#" class="btn btn-border open_modal">Выбрать тариф</a>
+                        <a href="#modal__order" class="btn btn-border open_modal">Выбрать тариф</a>
                     </div>
                 </div>
             </div>
@@ -582,7 +606,8 @@
                         <ul class="list-parameters">
                             <li>
                                 <p>Личный кабинет</p>
-                                <span><svg class="icon-svg icon-check"><use xlink:href="img/sprite.svg#check"></use></svg></span>
+                                <span><svg class="icon-svg icon-check"><use
+                                        xlink:href="img/sprite.svg#check"></use></svg></span>
                             </li>
                             <li>
                                 <p>Экстренная юридическая консультация по
@@ -608,23 +633,27 @@
                                     различных областях — техника, автомобили и
                                     т.д.
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Проверка наличия задолженностей по долгам/
                                     штрафам, которые могут не позволить
                                     клиенту выехать заграницу</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Бесплатные звонки 8-800, скайп, ЛК</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Предоставление аудиозаписи разговора с
                                     юристом
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Помощь и сопровождение
@@ -639,7 +668,8 @@
                             <li>
                                 <p>Предоставление типовых договоров и
                                     инструкций по их составлению</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Письменная консультация</p>
@@ -675,7 +705,8 @@
                         <ul class="list-parameters">
                             <li>
                                 <p>Личный кабинет</p>
-                                <span><svg class="icon-svg icon-check"><use xlink:href="img/sprite.svg#check"></use></svg></span>
+                                <span><svg class="icon-svg icon-check"><use
+                                        xlink:href="img/sprite.svg#check"></use></svg></span>
                             </li>
                             <li>
                                 <p>Экстренная юридическая консультация по
@@ -701,23 +732,27 @@
                                     различных областях — техника, автомобили и
                                     т.д.
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Проверка наличия задолженностей по долгам/
                                     штрафам, которые могут не позволить
                                     клиенту выехать заграницу</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Бесплатные звонки 8-800, скайп, ЛК</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Предоставление аудиозаписи разговора с
                                     юристом
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Помощь и сопровождение
@@ -732,7 +767,8 @@
                             <li>
                                 <p>Предоставление типовых договоров и
                                     инструкций по их составлению</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Письменная консультация</p>
@@ -768,7 +804,8 @@
                         <ul class="list-parameters">
                             <li>
                                 <p>Личный кабинет</p>
-                                <span><svg class="icon-svg icon-check"><use xlink:href="img/sprite.svg#check"></use></svg></span>
+                                <span><svg class="icon-svg icon-check"><use
+                                        xlink:href="img/sprite.svg#check"></use></svg></span>
                             </li>
                             <li>
                                 <p>Экстренная юридическая консультация по
@@ -794,23 +831,27 @@
                                     различных областях — техника, автомобили и
                                     т.д.
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Проверка наличия задолженностей по долгам/
                                     штрафам, которые могут не позволить
                                     клиенту выехать заграницу</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Бесплатные звонки 8-800, скайп, ЛК</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Предоставление аудиозаписи разговора с
                                     юристом
                                 </p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Помощь и сопровождение
@@ -825,7 +866,8 @@
                             <li>
                                 <p>Предоставление типовых договоров и
                                     инструкций по их составлению</p>
-                                <span><svg class="icon-svg icon-infinity"><use xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
+                                <span><svg class="icon-svg icon-infinity"><use
+                                        xlink:href="img/sprite.svg#infinity-icon"></use></svg></span>
                             </li>
                             <li>
                                 <p>Письменная консультация</p>
@@ -1078,11 +1120,13 @@
                 <li><a href="#">Юридическим лицам</a></li>
             </ul>
 
-            <a href="tel:8 495 481 01-28" class="phone">
-                <span class="phone-text">8 495 481 01-28</span>
+            <div class="phone">
+                <a href="tel:8 495 481 01-28" class="phone-text">8 495 481 01-28</a>
+                <a href="#modal__call" class="phone-call open_modal">
                 <span class="phone-icon"><svg class="icon-svg"><use
                         xlink:href="img/sprite.svg#phone-icon"></use></svg></span>
-            </a>
+                </a>
+            </div>
         </div>
 
         <div class="footer-box">
@@ -1103,7 +1147,165 @@
     </div>
 </footer>
 
+<div class="modal__div" id="modal__cabinet">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Вход в личный кабинет</h2>
+
+            <form method="post" class="form">
+
+                <label>
+                    <span class="input-title">Электронная почта</span>
+                    <input type="text" name="mail" placeholder="qwerty@yandex.ru">
+                </label>
+
+                <label>
+                    <span class="input-title">Пароль</span>
+                    <span class="input-group">
+                        <input type="password" name="password" value="××××××××××××" required class="input-password">
+                    <span class="password-control"></span>
+                    </span>
+                </label>
+
+                <button type="submit" class="btn btn-accent">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal__call">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Заказ обратного звонка</h2>
+
+            <form method="post" class="form">
+
+                <label>
+                    <span class="input-title">Ваше имя*</span>
+                    <input type="text" name="name" placeholder="Иван" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Телефон*</span>
+                    <input type="text" name="phone" placeholder="8 888 888-88-88" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Интересующий тариф</span>
+                    <select name="select" class="select">
+                        <option value="Выберите тариф">Выберите тариф</option>
+                        <option value="Лайт">Лайт</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Голд">Голд</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="input-title">Комментарий</span>
+                    <textarea name="message" placeholder="Вы можете написать сюда удобное время для обратного звонка"></textarea>
+                </label>
+
+
+                <button type="submit" class="btn btn-accent">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal__order">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Оформление заказа</h2>
+
+            <form method="post" class="form">
+
+                <label>
+                    <span class="input-title">Ваша фамилия имя и отчество*</span>
+                    <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Дата рождения*</span>
+                    <span class="input-group">
+                        <input type="text" name="date" placeholder="16.08.2000" required>
+                        <span class="input-date-icon"><svg class="icon-svg"><use xlink:href="img/sprite.svg#date"></use></svg></span>
+                    </span>
+                </label>
+
+                <label>
+                    <span class="input-title">Регион проживания</span>
+                    <select name="select" class="select">
+                        <option value="Выберите тариф">Выберите регион</option>
+                        <option value="Лайт">Лайт</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Голд">Голд</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="input-title">Город</span>
+                    <select name="select" class="select">
+                        <option value="Выберите тариф">Выберите город</option>
+                        <option value="Лайт">Лайт</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Голд">Голд</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="input-title">Улица, номер дома и квартира</span>
+                    <input type="text" name="address" placeholder="">
+                </label>
+                <label>
+                    <span class="input-title">Телефон</span>
+                    <input type="text" name="name" placeholder="8 888 888-88-88" required>
+                </label>
+                <label>
+                    <span class="input-title">Электронная почта</span>
+                    <input type="text" name="mail" placeholder="qwerty@yandex.ru" required>
+                </label>
+                <button type="submit" class="btn btn-accent">Оформить заказ</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal__thanks">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Ваша заявка принята</h2>
+
+            <div class="box-text">
+                <p>Наш менеджер перезвонит вам в ближайшее время или в то, которое вы указали в комментарии.</p>
+            </div>
+
+            <button type="button" class="btn btn-accent btn-close-modal">Закрыть</button>
+        </div>
+    </div>
+</div>
+
 <div class="overlay"></div>
+
+<a href="#modal__thanks" class="btn btn-border open_modal">Окно спасибо!</a>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

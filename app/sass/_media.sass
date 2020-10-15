@@ -182,6 +182,9 @@
     p
       font-size: 14px
 
+  .col-4
+    width: 33.3%
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 850px)
   h2
@@ -289,8 +292,9 @@
   h1
     font-size: 30px
 
-  .col-3
+  .col-3, .col-4
     width: 50%
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 700px)
@@ -374,7 +378,7 @@
     max-width: none
     font-size: 14px
 
-  .col-3
+  .col-3, .col-4
     width: 100%
 
   .article .container
@@ -392,6 +396,9 @@
 
   .advantages-section-left .about-company__content .btn
     margin-right: 0
+
+  .modal__content
+    padding: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
@@ -436,34 +443,6 @@
       font-size: 14px
       line-height: normal
 
-
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .modal__content .box-text
+    line-height: normal
+    font-size: 14px
