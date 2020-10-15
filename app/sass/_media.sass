@@ -47,6 +47,13 @@
   h1
     font-size: 50px
 
+  .advantages-section-left .about-company__content
+    padding: 0 0 0 30px
+    .btn
+      margin: 0 15px 10px 0
+      &:last-child
+        margin-right: 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1060px)
   .tariffs-wrapper-content
@@ -217,9 +224,26 @@
   .breadcrumbs
     margin: 20px 0 10px
 
+  .advantages-section-left
+    .about-company__wrapper
+      padding: 0
+    .about-company__content
+      padding: 0
+      p
+        margin: 0 0 15px
+        font-size: 14px
+
+  .advantages-section-left ul li
+    font-size: 14px
+
+  .list-check
+    line-height: normal
+
 @media only screen and (max-width : 768px)
   .main-slider__title
     font-size: 24px
+    br
+      display: none
 
   .main-slider__content .text
     line-height: normal
@@ -366,6 +390,8 @@
     .btn
       margin: 0 auto 10px
 
+  .advantages-section-left .about-company__content .btn
+    margin-right: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
