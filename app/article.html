@@ -300,6 +300,162 @@
     </div>
 </footer>
 
+<div class="modal__div" id="modal__cabinet">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Вход в личный кабинет</h2>
+
+            <form method="post" class="form">
+
+                <label>
+                    <span class="input-title">Электронная почта</span>
+                    <input type="text" name="mail" placeholder="qwerty@yandex.ru">
+                </label>
+
+                <label>
+                    <span class="input-title">Пароль</span>
+                    <span class="input-group">
+                        <input type="password" name="password" value="××××××××××××" required class="input-password">
+                    <span class="password-control"></span>
+                    </span>
+                </label>
+
+                <button type="submit" class="btn btn-accent">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal__call">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Заказ обратного звонка</h2>
+
+            <form method="post" class="form">
+
+                <label>
+                    <span class="input-title">Ваше имя*</span>
+                    <input type="text" name="name" placeholder="Иван" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Телефон*</span>
+                    <input type="text" name="phone" placeholder="8 888 888-88-88" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Интересующий тариф</span>
+                    <select name="select" class="select">
+                        <option value="Выберите тариф">Выберите тариф</option>
+                        <option value="Лайт">Лайт</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Голд">Голд</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="input-title">Комментарий</span>
+                    <textarea name="message" placeholder="Вы можете написать сюда удобное время для обратного звонка"></textarea>
+                </label>
+
+
+                <button type="submit" class="btn btn-accent">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal__order">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Оформление заказа</h2>
+
+            <form method="post" class="form">
+
+                <label>
+                    <span class="input-title">Ваша фамилия имя и отчество*</span>
+                    <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Дата рождения*</span>
+                    <span class="input-group">
+                        <input type="text" name="date" placeholder="16.08.2000" required>
+                        <span class="input-date-icon"><svg class="icon-svg"><use xlink:href="img/sprite.svg#date"></use></svg></span>
+                    </span>
+                </label>
+
+                <label>
+                    <span class="input-title">Регион проживания</span>
+                    <select name="select" class="select">
+                        <option value="Выберите тариф">Выберите регион</option>
+                        <option value="Лайт">Лайт</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Голд">Голд</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span class="input-title">Город</span>
+                    <select name="select" class="select">
+                        <option value="Выберите тариф">Выберите город</option>
+                        <option value="Лайт">Лайт</option>
+                        <option value="Стандарт">Стандарт</option>
+                        <option value="Голд">Голд</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="input-title">Улица, номер дома и квартира</span>
+                    <input type="text" name="address" placeholder="">
+                </label>
+                <label>
+                    <span class="input-title">Телефон</span>
+                    <input type="text" name="name" placeholder="8 888 888-88-88" required>
+                </label>
+                <label>
+                    <span class="input-title">Электронная почта</span>
+                    <input type="text" name="mail" placeholder="qwerty@yandex.ru" required>
+                </label>
+                <button type="submit" class="btn btn-accent">Оформить заказ</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div" id="modal__thanks">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+        </svg></div>
+
+        <div class="modal__content">
+
+            <h2>Ваша заявка принята</h2>
+
+            <div class="box-text">
+                <p>Наш менеджер перезвонит вам в ближайшее время или в то, которое вы указали в комментарии.</p>
+            </div>
+
+            <button type="button" class="btn btn-accent btn-close-modal">Закрыть</button>
+        </div>
+    </div>
+</div>
+
 <div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
